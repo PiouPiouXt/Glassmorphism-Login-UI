@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(wallhaven-k81776.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.main {
+    display: flex;
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+    height: 550px;
+    width: 450px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    flex-direction: column;
+}
+
+.header {
+    margin: 25px auto;
+}
+
+h1 {
+    margin: 20px auto;
+    font-size: 2.5rem;
+    color: white;
+    pointer-events: none;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 45px;
+    position: relative;
+}
+
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    padding: 12px 20px;
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 1.3rem;
+    transition: 0.3s ease;
+    color: white;
+}
+
+input:focus+.label
+
+/* ,input:not(:placeholder-shown) + .label  */
+    {
+    top: -12px;
+    left: 25px;
+    font-size: 1rem;
+}
+
+.bx {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 2rem;
+    color: white;
+}
+
+.input-box {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-family: 'DM sans';
+    padding: 20px 60px;
+    font-size: 1.4rem;
+    border: 2px solid rgb(255, 255, 255);
+    background: transparent;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+
+button:hover {
+    border-radius: 10px 35px;
+    background-color: rgba(255, 255, 255, 0.055);
+    transition: 0.1s;
+}
+
+button:active {
+    border-radius: 35px 10px;
+}
